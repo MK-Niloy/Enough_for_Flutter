@@ -3,7 +3,13 @@ class man{
   int age = 0;
   double height =0.0;
   String address ='';
+
+  //constructor means class er name a function
+  man(){
+    print('object is creating');
+  }
 }
+
 void main(){
   //niloy object
   man niloy = man();
@@ -17,16 +23,5 @@ void main(){
   print(niloy.height);
   print(niloy.address);
 
-  //Shakil object
-  man shakil= man();
-  shakil.name='Shakil';
-  shakil.age=21;
-  shakil.height=5.1;
-  shakil.address='Gazipur';
-  print(shakil);
-  print(shakil.name);
-  print(shakil.age);
-  print(shakil.height);
-  print(shakil.address);
-  print(shakil.runtimeType);
+
 }
