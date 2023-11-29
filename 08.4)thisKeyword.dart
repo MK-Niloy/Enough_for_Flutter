@@ -2,7 +2,7 @@
 class student{
   String name ='';
   int age =0;
- /* student(String n, int a){
+  /* student(String n, int a){
     name=n;
     age=a;
   }*/
@@ -11,10 +11,10 @@ class student{
     this.age=age;
   }
   //method
- void displayInformation(){
+  void displayInformation(){
     print(name);
     print(age);
- }
+  }
 
 }
 void main(){
