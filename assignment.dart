@@ -39,7 +39,7 @@ class Person implements Role {
   // Implement displayRole method from the Role interface
   @override
   void displayRole() {
-    print('Person has the following role:');
+    //print('Person has the following role:');
     role.displayRole();
   }
 }
@@ -66,11 +66,13 @@ class Student extends Person {
   // Override displayRole() method
   @override
   void displayRole() {
+    print('\n');
     super.displayRole();
+    print('\n');
    // print('Student ID: $studentID');
-    print('Name : $name');
-    print('Age : $age');
-    print('Address: $address');
+    print('Name : $name \n');
+    print('Age : $age \n');
+    print('Address: $address\n');
     //print('Grade: $grade');
     print('Average Score: ${calculateAverageScore().toStringAsFixed(2)}');
   }
@@ -88,7 +90,8 @@ class Teacher extends Person {
 
   // Method to display the courses taught by the teacher
   void displayCoursesTaught() {
-    print('Courses Taught by Teacher:');
+    print('\n');
+    print('Courses Taught :');
     for (var course in coursesTaught) {
       print(course);
     }
@@ -98,8 +101,8 @@ class Teacher extends Person {
   @override
   void displayRole() {
     super.displayRole();
-    print('Teacher ID: $teacherID \n''\nName : $name');
-   // print('Name : $name');
+    //print('Teacher ID: $teacherID ');
+   print('Name : $name');
     print('Age : $age');
     print('Address: $address');
     displayCoursesTaught();
