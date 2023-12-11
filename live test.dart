@@ -3,10 +3,10 @@ displayFruitDetails(List<Map<String, dynamic>> fruits) {
     print("Name: ${fruit["name"]}, Color: ${fruit["color"]}, Price: ${fruit["price"]}");
   }
 }
-applyPriceDiscount(List<Map<String, dynamic>> fruits, double discountPercentage) {
+applyPriceDiscount(List<Map<String, dynamic>> fruits, double discount) {
   for (var fruit in fruits){
-    double discountedPrice = fruit["price"] - (fruit["price"] *discountPercentage/100);
-    fruit["price"] = discountedPrice;
+    double discountPrice = fruit["price"] - (fruit["price"] *discount/100);
+    fruit["price"] = discountPrice;
   }
 }
 void main() {
